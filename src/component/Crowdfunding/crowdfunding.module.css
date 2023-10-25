@@ -1,0 +1,387 @@
+.container {
+    width: 100%;
+    height: 50vw;
+    /* margin: 5% 0; */
+    margin-top: 5%;
+    margin-bottom: 10%;
+    /* background-color: green; */
+    position: relative;
+}
+
+.dots {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    z-index: 0;
+}
+
+/* Title */
+.title {
+    position: relative;
+    /* margin-top: 5%; */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 18%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleMain {
+    font-size: 2.8vw;
+    font-weight: 600;
+    /* margin-bottom: 5vh; */
+    color: var(--text-black-title-color);
+}
+
+.titleDes {
+    /* font-size: 20px; */
+    font-size: 1.4vw;
+    font-weight: 500;
+    text-align: center;
+    color: var(--text-black-color);
+}
+
+
+/* mainComponent */
+.mainComponent {
+    position: relative;
+    width: 100%;
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentImg {
+    width: 100%;
+    height: auto;
+}
+
+.left,
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    position: absolute;
+    top: 0;
+    left: 6%;
+    width: 6%;
+    height: 100%;
+}
+
+.right {
+    position: absolute;
+    top: 0;
+    right: 6%;
+    width: 6%;
+    height: 100%;
+}
+
+
+/* LeftText and RightText + line decor */
+.leftText,
+.rightText {
+    position: absolute;
+    font-size: 1.5vw;
+    color: var(--text-blue-color);
+    font-weight: 700;
+    text-align: center;
+    width: 175%;
+}
+
+.leftText {
+    left: -60%;
+    transform: rotate(-90deg);
+}
+
+.rightText {
+    right: -60%;
+    transform: rotate(90deg);
+}
+
+.leftLineDecorTop,
+.leftLineDecorBottom,
+.rightLineDecorTop,
+.rightLineDecorBottom {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.leftLineDecorTop,
+.rightLineDecorTop {
+    top: 8%;
+}
+
+.leftLineDecorBottom,
+.rightLineDecorBottom {
+    bottom: 8%;
+}
+
+.leftLineDecorTopImg,
+.leftLineDecorBottomImg,
+.rightLineDecorTopImg,
+.rightLineDecorBottomImg {
+    bottom: 0;
+    width: auto;
+    height: 100%;
+}
+
+.leftLineDecorBottomImg {
+    transform: rotateX(180deg);
+}
+
+.rightLineDecorTopImg {
+    transform: rotateY(180deg);
+}
+
+.rightLineDecorBottomImg {
+    transform: rotate(180deg);
+}
+
+
+
+/* LeftItem + RightItem */
+.leftItemTop,
+.leftItemBottom,
+.rightItemTop,
+.rightItemBottom {
+    position: absolute;
+    width: 8.5vw;
+    height: 8.5vw;
+}
+
+.leftItemTop {
+    top: 10%;
+    left: 120%;
+}
+
+.leftItemBottom {
+    /* bottom: 10%; */
+    bottom: 15%;
+    left: 120%;
+}
+
+.rightItemTop {
+    top: 10%;
+    right: 120%;
+}
+
+.rightItemBottom {
+    /* bottom: 10%; */
+    bottom: 15%;
+    right: 120%;
+}
+
+
+.itemImgGradientBg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    /* fill: var(--primary-background); */
+    /* fill: red; */
+}
+
+.itemImgWhiteBg {
+    width: 96%;
+    height: 96%;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.itemImgWhite {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10%;
+    filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.20));
+}
+
+.itemBlurBg {
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: var(--primary-background);
+    filter: blur(1.2vw);
+}
+
+.itemImgElement {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.itemDescription {
+    position: absolute;
+    color: var(--text-black-title-color);
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-align: center;
+    width: 150%;
+    left: 50%;
+    top: 105%;
+    transform: translateX(-50%);
+    /* background-color: red; */
+}
+
+
+/* Center */
+.center {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+
+.centerTitle {
+    /* position: absolute; */
+    width: 100%;
+    height: 20%;
+    font-size: 1.7vw;
+    font-weight: 600;
+    color: var(--text-blue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerContent {
+    width: 100%;
+    height: 80%;
+    display: flex;
+
+}
+
+.contentBlockTop,
+.contentBlockBottom {
+    position: absolute;
+    height: 35%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentBlockTop {
+    top: 20%;
+    justify-content: flex-end;
+}
+
+.contentBlockBottom {
+    bottom: 0;
+    justify-content: flex-start;
+}
+
+.contentBlockTop::before,
+.contentBlockBottom::before {
+    content: '';
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+    filter: drop-shadow(0 0 0.25rem rgb(255, 255, 255));
+}
+
+.contentBlockTop::before,
+.contentBlockTop::after {
+    transform: translateY(50%);
+    bottom: calc(-5/35 * 100%);
+}
+
+.contentBlockBottom::before,
+.contentBlockBottom::after {
+    transform: translateY(-50%);
+    top: calc(-5/35 * 100%);
+}
+
+.contentBlockTop::after,
+.contentBlockBottom::after {
+    content: '';
+    position: absolute;
+    width: 0.5vw;
+    height: 0.5vw;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.contentNumber {
+    font-size: 1.4vw;
+    font-weight: 600;
+    margin: 4% 0;
+    color: var(--text-black-color);
+}
+
+.contentDescription {
+    font-size: 1vw;
+    font-weight: 400;
+    text-align: center;
+    color: var(--text-black-color);
+}
+
+.centerLine {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    height: 0.2vw;
+    top: 60%;
+    transform: translateY(-50%);
+    background: var(--secondary-color);
+}
+
+
+
+/* Bottom layout */
+.bottom {
+    position: absolute;
+    width: 50%;
+    height: 24%;
+    bottom: -12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomEllipse {
+    width: 100%;
+    height: 100%;
+}
+
+.bottomEllipseImg {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.bottomTitle {
+    color: var(--text-black-color);
+    font-weight: 700;
+    font-size: 2.2vw;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

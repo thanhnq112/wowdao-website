@@ -1,0 +1,224 @@
+.container {
+    margin-top: 35vw;
+    /* height: 80vh; */
+    width: 100%;
+    height: 50vw;
+    /* height: max-content; */
+    /* height: fit-content; */
+    position: relative;
+}
+
+
+.dots {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+
+/* Title */
+.title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.titleMain {
+    /* font-size: 40px; */
+    font-size: 2.8vw;
+    font-weight: 600;
+    margin-bottom: 5vh;
+    color: var(--text-black-title-color);
+}
+
+.titleDes {
+    /* font-size: 20px; */
+    font-size: 1.4vw;
+    font-weight: 500;
+    text-align: center;
+    color: var(--text-black-color);
+}
+
+
+.content {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.valueLine {
+    width: 100%;
+    height: auto;
+}
+
+/* .element {} */
+
+.elementItem1,
+.elementItem2,
+.elementItem3,
+.elementItem4,
+.elementItem5,
+.elementItem6 {
+    /* width: 56px;
+    height: 56px; */
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+
+}
+
+.elementItem1::after,
+.elementItem2::after,
+.elementItem3::after,
+.elementItem4::after,
+.elementItem5::after,
+.elementItem6::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--primary-background);
+    border-radius: 50%;
+    filter: blur(7px);
+    z-index: -1;
+}
+
+.elementItem1::before,
+.elementItem2::before,
+.elementItem3::before,
+.elementItem4::before,
+.elementItem5::before,
+.elementItem6::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(white, white) padding-box,
+        var(--primary-background) border-box;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    z-index: -1;
+}
+
+.elementItem1 {
+    top: 18%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+}
+
+.elementItem2 {
+    top: 40%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+}
+
+.elementItem3 {
+    top: 86%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+}
+
+.elementItem4 {
+    top: 86%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.elementItem5 {
+    top: 40%;
+    left: 71%;
+    transform: translate(-50%, -50%);
+}
+
+.elementItem6 {
+    top: 18%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+}
+
+.elementItemImg {
+    width: 50%;
+    height: 50%;
+    padding: 25%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    /* background-image: url("/item_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    z-index: 1; */
+}
+
+.elementTitle1,
+.elementTitle2,
+.elementTitle3,
+.elementTitle4,
+.elementTitle5,
+.elementTitle6 {
+    font-size: 1.1vw;
+    width: 12vw;
+    font-weight: 500;
+    position: absolute;
+    text-align: center;
+    color: var(--text-black-color);
+
+}
+
+.elementTitle1 {
+    top: 40%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+}
+
+.elementTitle2 {
+    top: 66%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+}
+
+.elementTitle3 {
+    top: 108%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+}
+
+.elementTitle4 {
+    top: 108%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.elementTitle5 {
+    top: 60%;
+    left: 71%;
+    transform: translate(-50%, -50%);
+}
+
+.elementTitle6 {
+    top: 40%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+}
+
+/* Responsive */
+/* Mobile: width < 740px */
+/* @media only screen and (max-width: 46.1875em) {} */
+
+/* Tablet: width >= 740px and width < 1024px */
+/* @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {} */

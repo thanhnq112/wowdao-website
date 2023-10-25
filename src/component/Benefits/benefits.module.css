@@ -1,0 +1,232 @@
+.container {
+    /* background: rgba(0, 0, 0, 0.8); */
+    width: 100%;
+    height: 50vw;
+    position: relative;
+}
+
+.dots {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30%;
+    width: 50%;
+    /* background-color: green; */
+    display: table;
+}
+
+.titleText {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2.8vw;
+    font-weight: 600;
+    color: var(--text-black-title-color);
+}
+
+.titleTextBold {
+    font-weight: 700;
+    background: var(--primary-background);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.contentCenter {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    /* height: fit-content; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: pink; */
+}
+
+.ellipseBig {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 70%;
+    height: auto;
+
+    /* left: 50%;
+    transform: translateX(-50%); */
+
+}
+
+.ellipseSmallImg {
+
+    width: 40%;
+    height: auto;
+
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+
+.contentTitle {
+    font-size: 2vw;
+    font-weight: 700;
+    color: #4141C1;
+}
+
+
+/* Element */
+.elementItem1,
+.elementItem2,
+.elementItem3,
+.elementItem4,
+.elementItem5,
+.elementItem6 {
+    /* width: 56px;
+    height: 56px; */
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+
+}
+
+.elementItem1::after,
+.elementItem2::after,
+.elementItem3::after,
+.elementItem4::after,
+.elementItem5::after,
+.elementItem6::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--primary-background);
+    border-radius: 50%;
+    filter: blur(7px);
+    z-index: -1;
+}
+
+.elementItem1::before,
+.elementItem2::before,
+.elementItem3::before,
+.elementItem4::before,
+.elementItem5::before,
+.elementItem6::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(white, white) padding-box,
+        var(--primary-background) border-box;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    z-index: -1;
+}
+
+.elementItemImg {
+    width: 50%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 25%;
+    border-radius: 50%;
+}
+
+.elementItem1 {
+    top: 40%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+}
+
+.elementItem2 {
+    top: 40%;
+    right: 26%;
+    transform: translate(50%, -50%);
+}
+
+.elementItem3 {
+    top: 64%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.elementItem4 {
+    top: 64%;
+    right: 20%;
+    transform: translate(50%, -50%);
+}
+
+.elementItem5 {
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.elementTitle1,
+.elementTitle2,
+.elementTitle3,
+.elementTitle4,
+.elementTitle5 {
+    font-size: 1.3vw;
+    width: 20vw;
+    font-weight: 500;
+    position: absolute;
+    text-align: center;
+    color: var(--text-black-color);
+
+}
+
+.elementTitle1 {
+    top: 32%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+}
+
+.elementTitle2 {
+    top: 32%;
+    right: 26%;
+    transform: translate(50%, -50%);
+}
+
+.elementTitle3 {
+    top: 72%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.elementTitle4 {
+    top: 72%;
+    right: 20%;
+    transform: translate(50%, -50%);
+}
+
+.elementTitle5 {
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+/* Responsive */
+/* Mobile: width < 740px */
+/* @media only screen and (max-width: 46.1875em) {} */
+
+/* Tablet: width >= 740px and width < 1024px */
+/* @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {} */
