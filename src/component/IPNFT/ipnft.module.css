@@ -1,0 +1,237 @@
+.container {
+    width: 100%;
+    height: 70vw;
+}
+
+.dots {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+
+/* Title */
+.title {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.titleMain {
+    /* font-size: 40px; */
+    font-size: 2.8vw;
+    font-weight: 600;
+    color: var(--text-black-title-color);
+}
+
+
+
+/* mainContent */
+.mainContent {
+    width: 100%;
+    height: 65%;
+    position: relative;
+}
+
+.earth {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: auto;
+}
+
+.earthImg {
+    width: 100%;
+    height: auto;
+}
+
+.earthMiniImg {
+    position: absolute;
+    width: 8%;
+    height: auto;
+    top: 86%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.earthText {
+    font-size: 2.4vw;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contentLeft,
+.contentRight {
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    bottom: 63%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.contentLeft {
+    left: 4%;
+}
+
+.contentRight {
+    right: 4%;
+
+}
+
+.content {
+    width: 50%;
+    height: 30%;
+    bottom: 0;
+}
+
+.interact {
+    width: 45%;
+    height: 100%;
+    position: relative;
+}
+
+.mainElement {
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+    background: var(--primary-background);
+    position: relative;
+}
+
+.mainElementBg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+    background: var(--primary-background);
+    filter: blur(1vw);
+}
+
+.mainElementText {
+    font-size: 1.1vw;
+    font-weight: 700;
+    color: white;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+    border: 1px solid white;
+    position: absolute;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0.66) 0%,
+            rgba(255, 255, 255, 0.24) 25%,
+            rgba(255, 255, 255, 0.33) 77%,
+            rgba(255, 255, 255, 0.79) 100%);
+}
+
+.arrowComponent {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.arrowImg {
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    right: 0;
+    bottom: 30%;
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: var(--text-black-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.funds {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    right: 0;
+    bottom: -30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundsImg {
+    width: 2vw;
+    height: 2vw;
+}
+
+.fundsText {
+    margin-left: 0.5vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+
+
+.contentCenter {
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.arrow2way {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow2wayImg {
+    height: 100%;
+    width: auto;
+}
+
+.descToArrow {
+    position: absolute;
+    top: 35%;
+    left: 58%;
+    transform: translateY(-50%);
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.contentCenterMain {
+    width: 100%;
+    height: 20%;
+}

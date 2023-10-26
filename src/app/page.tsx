@@ -7,6 +7,7 @@ import Benefits from '@/component/Benefits'
 import Crowdfunding from '@/component/Crowdfunding'
 import Roadmap from '@/component/Roadmap'
 import Teams from '@/component/Teams'
+import IPNFT from '@/component/IPNFT'
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
             <Roadmap />
             <Teams />
             <Crowdfunding />
+            <IPNFT />
         </main>
     )
 }
