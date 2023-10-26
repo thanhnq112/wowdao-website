@@ -10,7 +10,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { dataTeams } from '../Data/dataTeams'
+import { dataTeams } from '../../utils/Data/dataTeams'
 import SlideComponent from '../SlideComponent'
 
 export default function Teams() {

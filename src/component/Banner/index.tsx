@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import style from './banner.module.css'
+import { montserrat } from '@/utils/fonts'
 
 export default function Banner() {
     return (
@@ -17,8 +18,8 @@ export default function Banner() {
             </div>
 
             <div className={style.title}>
-                <span className={style.titleText}>The 1st DAO for the</span >
-                <span className={style.titleText}>open source AI community</span>
+                <span className={`${montserrat.className} ${style.titleText}`}>The 1st DAO for the</span >
+                <span className={`${montserrat.className} ${style.titleText}`}>open source AI community</span>
             </div>
 
             <div className={style.info}>
@@ -31,10 +32,10 @@ export default function Banner() {
                         </svg>
 
                     </div>
-                    <div className={style.btnText}>Contact Now</div>
+                    <div className={style.btnText}>Join Us</div>
                 </Link>
 
-                <div className={style.social}>
+                {/* <div className={style.social}>
                     <Link href={'/'} className={style.socialItem}>
                         <Image className='' src={"/facebook.png"} width={24} height={24} alt="facebook" priority />
                     </Link>
@@ -47,7 +48,7 @@ export default function Banner() {
                     <Link href={'/'} className={style.socialItem}>
                         <Image className='' src={"/twitter.png"} width={24} height={24} alt="facebook" priority />
                     </Link>
-                </div>
+                </div> */}
             </div>
 
         </div>

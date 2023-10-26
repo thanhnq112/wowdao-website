@@ -4,22 +4,23 @@ import Footer from '@/component/Footer'
 import Banner from '@/component/Banner'
 import type { Metadata } from 'next'
 // import { Inter } from 'next/font/google'
-import { Quicksand, Montserrat } from 'next/font/google'
+// import { Quicksand, Montserrat } from 'next/font/google'
 // import { quicksand, montserrat } from './font'
+import { quicksand, montserrat } from '@/utils/fonts'
 
 // const inter = Inter({ subsets: ['latin'] })
 
-const quicksand = Quicksand({
-    subsets: ['latin'],
-    weight: ['400', '500', '600', '700'],
-    variable: '--quicksand-font',
-})
+// const quicksand = Quicksand({
+//     subsets: ['latin'],
+//     weight: ['400', '500', '600', '700'],
+//     variable: '--quicksand-font',
+// })
 
-const montserrat = Montserrat({
-    subsets: ['latin'],
-    weight: ['700', '900'],
-    variable: '--montserrat-font',
-})
+// const montserrat = Montserrat({
+//     subsets: ['latin'],
+//     weight: ['700', '900'],
+//     variable: '--montserrat-font',
+// })
 
 export const metadata: Metadata = {
     title: 'Wow Dao',

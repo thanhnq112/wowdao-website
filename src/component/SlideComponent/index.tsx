@@ -1,6 +1,6 @@
 import Image from "next/image";
 import style from './slideComponent.module.css'
-import { dataTeams } from '../Data/dataTeams'
+import { dataTeams } from '../../utils/Data/dataTeams'
 
 
 type SlideComponentProps = {

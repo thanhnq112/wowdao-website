@@ -51,7 +51,7 @@ export default function Crowdfunding() {
                     </div>
 
                     <div className={style.leftItemTop}>
-                        <Image className={style.itemImgGradientBg} src={"/hexagon-bg-gradient.png"} width={50} height={50} alt="" priority />
+                        <Image className={style.itemImgGradientBg} src={"/hexagon-bg-gradient.png"} width={50} height={50} alt="" priority loading="eager" />
                         <Image className={style.itemImgWhiteBg} src={"/hexagon-bg-white.png"} width={50} height={50} alt="" priority />
                         <Image className={style.itemImgWhite} src={"/hexagon-child.png"} width={50} height={50} alt="" priority />
                         <div className={style.itemBlurBg}></div>
@@ -60,7 +60,7 @@ export default function Crowdfunding() {
                     </div>
 
                     <div className={style.leftItemBottom}>
-                        <Image className={style.itemImgGradientBg} src={"/hexagon-bg-gradient.png"} width={50} height={50} alt="" priority />
+                        <Image className={style.itemImgGradientBg} src={"/hexagon-bg-gradient.png"} width={50} height={50} alt="" priority loading="eager" />
                         <Image className={style.itemImgWhiteBg} src={"/hexagon-bg-white.png"} width={50} height={50} alt="" priority />
                         <Image className={style.itemImgWhite} src={"/hexagon-child.png"} width={50} height={50} alt="" priority />
                         <div className={style.itemBlurBg}></div>

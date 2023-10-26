@@ -8,7 +8,7 @@ export default function Value() {
 
             <div className={style.title}>
                 <div className={style.titleMain}>WowDAO value propositions</div>
-                <div className={style.titleDes}>Creating a member-controlled AI ecosystem with expert support, merit-based governance, IP protection, and blockchain decentralization.</div>
+                {/* <div className={style.titleDes}>Creating a member-controlled AI ecosystem with expert support, merit-based governance, IP protection, and blockchain decentralization.</div> */}
             </div>
 
             <div className={style.content}>
@@ -20,14 +20,14 @@ export default function Value() {
                     <div className={style.elementTitle1}>A Comprehensive sticky AI cosystem</div>
 
                     <div className={style.elementItem2}>
-                        <Image className={style.elementItemImg} src={"/item-puzzle.png"} width={24} height={24} alt="" priority />
+                        <Image className={style.elementItemImg} src={"/item-puzzle.svg"} width={24} height={24} alt="" priority />
                     </div>
                     <div className={style.elementTitle2}>Seamless comprehensive platform</div>
 
                     <div className={style.elementItem3}>
                         <Image className={style.elementItemImg} src={"/item-brain.png"} width={24} height={24} alt="" priority />
                     </div>
-                    <div className={style.elementTitle3}>Renowned AI thought leaders (exc levels)</div>
+                    <div className={style.elementTitle3}>Renowned AI thought leaders joined</div>
 
                     <div className={style.elementItem4}>
                         <Image className={style.elementItemImg} src={"/item-balance.png"} width={24} height={24} alt="" priority />

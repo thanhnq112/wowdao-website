@@ -5,6 +5,7 @@ import Banner from '@/component/Banner'
 import Value from '@/component/Value'
 import Benefits from '@/component/Benefits'
 import Crowdfunding from '@/component/Crowdfunding'
+import TextAnimation from '@/component/TextAnimation'
 import Roadmap from '@/component/Roadmap'
 import Teams from '@/component/Teams'
 import IPNFT from '@/component/IPNFT'
@@ -16,6 +17,7 @@ export default function Home() {
             <Banner />
             <Value />
             <Benefits />
+            <TextAnimation />
             <Roadmap />
             <Teams />
             <Crowdfunding />

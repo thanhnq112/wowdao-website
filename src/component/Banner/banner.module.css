@@ -35,8 +35,9 @@
 .titleText {
     font-size: 4.3vw;
     font-weight: 700;
-    letter-spacing: 2px;
-    font-family: var(--montserrat-font);
+    /* letter-spacing: 2px; */
+    letter-spacing: 0.2vw;
+    /* font-family: var(--montserrat-font); */
     /* color: var(--primary-background); */
     /* color: transparent;
     -webkit-text-stroke-width: 2px;
@@ -63,18 +64,21 @@
     justify-content: space-around;
     align-items: center;
     height: 18%;
-    /* z-index: 10; */
 }
 
 .btn {
     display: flex;
     width: fit-content;
-    height: 42px;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* height: 42px; */
+    height: 2.5vw;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    padding-left: 1.4vw;
+    padding-right: 1.4vw;
     align-items: center;
     justify-content: center;
-    border-radius: 100px;
+    /* border-radius: 100px; */
+    border-radius: 10vw;
     border: 1px white solid;
     background: var(--primary-background);
     position: relative;
@@ -87,10 +91,11 @@
     width: 100%;
     height: 100%;
     background: var(--primary-background);
-    border-radius: 100px;
+    /* border-radius: 100px; */
+    border-radius: 10vw;
     border: 1px white solid;
     box-shadow: 1px 1px 1px;
-    filter: blur(7px);
+    filter: blur(0.5vw);
     z-index: 0;
 }
 
@@ -99,33 +104,37 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 100px;
+    /* border-radius: 100px; */
+    border-radius: 10vw;
     border: 1px white solid;
     z-index: 1;
 }
 
 .btnStar {
     z-index: 1;
+    width: 1.6vw;
+    height: 1.6vw;
+    margin-left: 1vw;
 }
 
 .btnStar svg {
-    width: 2vw;
-    height: 2vw;
+    width: 100%;
+    height: 100%;
 }
 
 .btnText {
     color: white;
     font-weight: 700;
     /* font-size: 18px; */
-    font-size: 1vw;
-    margin-left: 10px;
+    font-size: 0.9vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
     z-index: 1;
 }
 
 .social {
     display: flex;
     margin-top: 20px;
-    /* background-color: green; */
     z-index: 1;
 }
 
@@ -230,10 +239,10 @@
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
     .titleText {
-        font-size: 4.7vw;
+        /* font-size: 4.7vw; */
     }
 
     .btnText {
-        font-size: 1.4vw;
+        /* font-size: 1.4vw; */
     }
 }
